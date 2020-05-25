@@ -63,7 +63,7 @@
                                     </form>
                                 </div>
                             </li>
-                            @endguest
+                        @endguest
                     </div>
                 </div>
             </nav>
