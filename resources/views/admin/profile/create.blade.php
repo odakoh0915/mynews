@@ -24,7 +24,8 @@
                     <div class="form-group row">
                         <lable class="col-md-2">性別</lable> 
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ old('gender') }}">
+                            <input type="radio" name="gender" value="男性">男性{{ old('gender') }}
+                            <input type="radio" name="gender" value="女性">女性{{ old('gender') }}
                         </div>
                     </div>
                     <div class="form-group row">
