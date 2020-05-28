@@ -42,10 +42,11 @@
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto"></ul>
                         
+                        <!--Laravel12 課題１（ログイン・ログアウトの追加）-->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('message.Login') }}</a></li>
-                        {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
+                        {{-- ログインしていたらユーザー名とログアウ�����ボタンを表示 --}}
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
