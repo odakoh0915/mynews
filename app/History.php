@@ -4,13 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class History extends Model
 {
     //
     protected $guarded = array('id');
+    
     public static $rules = array(
-            'title' => 'required',
-            'body' => 'required',
+        'news_id' => 'required',
+        'edited_at' => 'required',
     );
     
     // Newsモデルに関連付けを行う
