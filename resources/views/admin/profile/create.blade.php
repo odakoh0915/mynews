@@ -1,4 +1,4 @@
-<@extends('layouts.profile')
+@extends('layouts.profile')
 
 @section('title', '編集したタイトル')
 
@@ -24,8 +24,8 @@
                     <div class="form-group row">
                         <lable class="col-md-2">性別</lable> 
                         <div class="col-md-10">
-                            <input type="radio" name="gender" value="男性">男性{{ old('gender') }}
-                            <input type="radio" name="gender" value="女性">女性{{ old('gender') }}
+                            <input type="radio" name="gender" value="男性">男性
+                            <input type="radio" name="gender" value="女性">女性
                         </div>
                     </div>
                     <div class="form-group row">

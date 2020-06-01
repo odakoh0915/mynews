@@ -13,8 +13,7 @@ class RenameProfileToProfilesTable extends Migration
      */
     public function up()
     {
-        //リネーム処理 ↓が元の名前、↓がリネーム後
-        Schema::rename('profile', 'profiles'); 
+        Schema::rename('profile', 'profiles');
     }
 
     /**
