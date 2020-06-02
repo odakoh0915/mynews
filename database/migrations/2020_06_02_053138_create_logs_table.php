@@ -16,7 +16,7 @@ class CreateLogsTable extends Migration
         Schema::create('logs', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('profile_id');
-            $table->string('updated_at');
+            $table->string('edited_at');
             $table->timestamps();
         });
     }

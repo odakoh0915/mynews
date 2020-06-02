@@ -10,6 +10,6 @@ class Log extends Model
     protected $guarded = array('id');
     public static $rules = array(
         'profile_id' => 'required',
-        'updated_at' => 'required',
+        'edited_at' => 'required',
     );
 }
