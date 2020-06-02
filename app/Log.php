@@ -4,13 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class History extends Model
+class Log extends Model
 {
     //
     protected $guarded = array('id');
-    
     public static $rules = array(
-        'news_id' => 'required',
-        'edited_at' => 'required',
+        'profile_id' => 'required',
+        'updated_at' => 'required',
     );
 }

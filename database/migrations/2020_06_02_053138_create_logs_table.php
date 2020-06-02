@@ -4,22 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProfilesTable extends Migration
+class CreateLogsTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-     //名前・性別・趣味・自己紹介を追記
     public function up()
     {
-        Schema::create('profile', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('gender');
-            $table->string('hobby');
-            $table->string('introduction');
+        Schema::create('logs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('profile_id');
+            $table->string('updated_at');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateProfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('logs');
     }
 }
